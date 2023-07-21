@@ -19,3 +19,9 @@ The filters mentioned earlier are all (either partially or entirely) dependent o
 2. Logits difference: An answer is labeled as reliable if the disparity between logit values exceeds a specific parameter t.
 3. Model answer: All model responses are straightforwardly classified as reliable.
 In the context of these baselines, we operate under the presumption that CCS is not utilized, hence we regard the baseline filters as classifiers of model outputs.
+
+Furthermore, we used RoBERTa Large MNLI, which is the RoBERTa large model fine-tuned on the Multi-Genre Natural Language Inference (MNLI) corpus, as our base model.
+
+# Results
+
+For each of our two testing datasets and three levels of accuracy rates (90%, 95%, and 99%, defined as the percentage of filtered examples that are correct, or in other words, the filter's true positive rate), the following tables showcase the maximum percentage of examples each filter could approve, while preserving the specified accuracy. This data can be seen as the regularity with which a filter can offer a certain degree of certainty. Additionally, the tables enumerate the accuracy levels of our two filters that accept all inputs, namely the "Model answer" and "CCS answer" filters.

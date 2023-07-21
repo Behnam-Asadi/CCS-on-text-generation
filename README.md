@@ -25,3 +25,28 @@ Furthermore, we used RoBERTa Large MNLI, which is the RoBERTa large model fine-t
 # Results
 
 For each of our two testing datasets and three levels of accuracy rates (90%, 95%, and 99%, defined as the percentage of filtered examples that are correct, or in other words, the filter's true positive rate), the following tables showcase the maximum percentage of examples each filter could approve, while preserving the specified accuracy. This data can be seen as the regularity with which a filter can offer a certain degree of certainty. Additionally, the tables enumerate the accuracy levels of our two filters that accept all inputs, namely the "Model answer" and "CCS answer" filters.
+
+<div align="center">
+<img  src="src/img/IMDB_table.png"  align = 'center' width="700">
+  <figcaption><br>The largest portion of examples that each filter can accept while maintaining a given accuracy level (IMDB dataset).</figcaption>
+</div>
+
+<div align="center">
+<img  src="src/img/IMDB_plot.png"  align = 'center' width="700">
+  <figcaption><br>The largest portion of examples that each filter can accept while maintaining a given accuracy level (IMDB dataset).</figcaption>
+</div>
+
+<div align="center">
+<img  src="src/img/AMAZON-POLARITY_table.png"  align = 'center' width="700">
+  <figcaption><br>The largest portion of examples that each filter can accept while maintaining a given accuracy level (AMAZON-POLARITY dataset).</figcaption>
+</div>
+
+
+<div align="center">
+<img  src="src/img/AMAZON-POLARITY_plot.png"  align = 'center' width="700">
+  <figcaption><br>The largest portion of examples that each filter can accept while maintaining a given accuracy level (AMAZON-POLARITY Dataset).</figcaption>
+</div>
+
+Our top-performing filters considerably outshine our baseline methods in terms of coverage at the examined accuracy levels. In essence, they classify far fewer examples as "unreliable" while maintaining an equivalent accuracy level. These high-performing filters are the ones utilizing the CCS difference metric. We speculate that this is due to the CCS difference metric's superior ability to encapsulate the "confidence" of CCS as it directly contrasts the CCS outputs for the negative and positive prompts within a contrastive pair.
+
+When compared to baseline methods, the techniques we employ considerably broaden the "accuracy-coverage frontier"—that is, the segment of responses a filter can approve while sustaining a particular accuracy level among the samples it admits. For instance, in the AMAZON_POLARITY dataset, the baseline filters need to reject ≥ 50% of examples for the remainder to achieve 90% accuracy. However, a CCS-based metric can reach the same accuracy level while only designating 3% of model outputs as unreliable. Similarly, in the IMDB dataset, the top baseline filter needs to admit only 8% of answers to achieve 99% accuracy among accepted answers, while the top-performing CCS-based filter can accept 29% of answers while still maintaining 99% accuracy.

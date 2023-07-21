@@ -31,10 +31,12 @@ For each of our two testing datasets and three levels of accuracy rates (90%, 95
   <figcaption><br>The largest portion of examples that each filter can accept while maintaining a given accuracy level (IMDB dataset).</figcaption>
 </div>
 
+
 <div align="center">
 <img  src="src/img/IMDB_plot.png"  align = 'center' width="700">
   <figcaption><br>The largest portion of examples that each filter can accept while maintaining a given accuracy level (IMDB dataset).</figcaption>
 </div>
+
 
 <div align="center">
 <img  src="src/img/AMAZON-POLARITY_table.png"  align = 'center' width="700">
@@ -46,6 +48,7 @@ For each of our two testing datasets and three levels of accuracy rates (90%, 95
 <img  src="src/img/AMAZON-POLARITY_plot.png"  align = 'center' width="700">
   <figcaption><br>The largest portion of examples that each filter can accept while maintaining a given accuracy level (AMAZON-POLARITY Dataset).</figcaption>
 </div>
+
 
 Our top-performing filters considerably outshine our baseline methods in terms of coverage at the examined accuracy levels. In essence, they classify far fewer examples as "unreliable" while maintaining an equivalent accuracy level. These high-performing filters are the ones utilizing the CCS difference metric. We speculate that this is due to the CCS difference metric's superior ability to encapsulate the "confidence" of CCS as it directly contrasts the CCS outputs for the negative and positive prompts within a contrastive pair.
 

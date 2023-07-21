@@ -13,3 +13,9 @@ We conducted an evaluation of seven candidate filters, with the goal of identify
 5. CCS difference and CCS & model consensus: An answer was classified as reliable if it satisfied the conditions of both the "CCS difference filter" (for a certain t) and the "CCS & model consensus" filter.
 6. Logits difference and CCS & model consensus: An answer was identified as reliable if the discrepancy in logits surpassed parameter t and it met the "CCS & model consensus" filter criteria.
 7. CCS answer: Simply, every CCS answer was classified as reliable.
+
+The filters mentioned earlier are all (either partially or entirely) dependent on CCS outputs. As a comparative measure, we test three baseline filters that operate independently of CCS outputs in the baseline scenario of pinpointing reliably answered questions by a model:
+1. Max logit: An answer is designated as reliable if the maximum logit output surpasses a certain parameter t.
+2. Logits difference: An answer is labeled as reliable if the disparity between logit values exceeds a specific parameter t.
+3. Model answer: All model responses are straightforwardly classified as reliable.
+In the context of these baselines, we operate under the presumption that CCS is not utilized, hence we regard the baseline filters as classifiers of model outputs.

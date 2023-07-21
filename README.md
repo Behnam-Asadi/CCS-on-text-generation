@@ -28,25 +28,28 @@ For each of our two testing datasets and three levels of accuracy rates (90%, 95
 
 <div align="center">
 <img  src="src/img/IMDB_table.png"  align = 'center' width="700">
-  <figcaption><br>The largest portion of examples that each filter can accept while maintaining a given accuracy level (IMDB dataset).<br></figcaption>
+  <figcaption><br>The largest portion of examples that each filter can accept while maintaining a given accuracy level (IMDB dataset).</figcaption>
 </div>
 
+<p></p>
 
 <div align="center">
 <img  src="src/img/IMDB_plot.png"  align = 'center' width="700">
-  <figcaption><br>The largest portion of examples that each filter can accept while maintaining a given accuracy level (IMDB dataset).<br></figcaption>
+  <figcaption><br>The largest portion of examples that each filter can accept while maintaining a given accuracy level (IMDB dataset).</figcaption>
 </div>
 
+<p></p>
 
 <div align="center">
 <img  src="src/img/AMAZON-POLARITY_table.png"  align = 'center' width="700">
-  <figcaption><br>The largest portion of examples that each filter can accept while maintaining a given accuracy level (AMAZON-POLARITY dataset).<br></figcaption>
+  <figcaption><br>The largest portion of examples that each filter can accept while maintaining a given accuracy level (AMAZON-POLARITY dataset).</figcaption>
 </div>
 
+<p></p>
 
 <div align="center">
 <img  src="src/img/AMAZON-POLARITY_plot.png"  align = 'center' width="700">
-  <figcaption><br>The largest portion of examples that each filter can accept while maintaining a given accuracy level (AMAZON-POLARITY Dataset).<br></figcaption>
+  <figcaption><br>The largest portion of examples that each filter can accept while maintaining a given accuracy level (AMAZON-POLARITY Dataset).</figcaption>
 </div>
 
 <p>
